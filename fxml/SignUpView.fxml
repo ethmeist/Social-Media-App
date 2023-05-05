@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #F4EBD9#F4EBD9;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.WelcomeController">
+   <children>
+      <Pane layoutX="130.0" layoutY="42.0" prefHeight="600.0" prefWidth="650.0" style="-fx-background-color: #483D3F#483D3F; -fx-background-radius: 20;">
+         <children>
+            <TextField fx:id="signUpUsername" layoutX="234.0" layoutY="163.0" prefHeight="40.0" prefWidth="200.0" promptText="choose a username..">
+               <font>
+                  <Font name="Andale Mono" size="14.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="signUpPassword" layoutX="231.0" layoutY="243.0" prefHeight="40.0" prefWidth="200.0" promptText="enter password">
+               <font>
+                  <Font name="Andale Mono" size="14.0" />
+               </font>
+            </PasswordField>
+            <Button layoutX="235.0" layoutY="415.0" mnemonicParsing="false" onAction="#createAccount" prefHeight="59.0" prefWidth="196.0" style="-fx-background-color: none; -fx-border-color: #058ED9#058ED9; -fx-border-width: 5; -fx-border-radius: 25; -fx-text-fill: #058ED9#058ED9;" text="create me account">
+               <font>
+                  <Font name="Andale Mono" size="16.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="confirmPassword" layoutX="231.0" layoutY="326.0" prefHeight="40.0" prefWidth="200.0" promptText="re-eenter password">
+               <font>
+                  <Font name="Andale Mono" size="14.0" />
+               </font>
+            </PasswordField>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="164.0" layoutY="44.0" prefHeight="71.0" prefWidth="322.0" text="please enter account details" textFill="#058ed9">
+               <font>
+                  <Font name="Andale Mono" size="19.0" />
+               </font>
+            </Label>
+            <Button layoutX="19.0" layoutY="27.0" mnemonicParsing="false" onAction="#switchToSignInView" prefHeight="33.0" prefWidth="117.0" style="-fx-background-color: none; -fx-border-color: #058ED9#058ED9; -fx-border-width: 4; -fx-border-radius: 20; -fx-text-fill: #058ED9#058ED9;" text="&lt; go back ">
+               <font>
+                  <Font name="Andale Mono" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="signUpOutput" alignment="CENTER" contentDisplay="CENTER" layoutX="178.0" layoutY="381.0" prefHeight="26.0" prefWidth="322.0" textFill="#058ed9" />
+         </children>
+      </Pane>
+   </children>
+</Pane>
