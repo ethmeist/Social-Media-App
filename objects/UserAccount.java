@@ -77,16 +77,16 @@ public class UserAccount implements Serializable{
 	 }
 	 
 	 public LinkedList<Post> getMeFriend() {
-		 LinkedList<Post> myNiggas = new LinkedList<>();
+		 LinkedList<Post> myFriends = new LinkedList<>();
 		 
 		 //iterate through all posts until we find someone we're following
 		 //when we find a post posted by person we follow, we add to tail
 		 for (Post post : PostCenter.getInstance().getAllPosts()) {
 			 if (isFollowing(post.getUserPosted())) {
-				 myNiggas.addLast(post);
+				 myFriends.addLast(post);
 			 }
 		 }
-		 return myNiggas;
+		 return myFriends;
 	 } 
 	 
 }
