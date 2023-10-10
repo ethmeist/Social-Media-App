@@ -1,3 +1,2 @@
 # Social-Media-App
-## ohh nooo 
-*god help us*
+## My rendition of social media through a Java medium...
