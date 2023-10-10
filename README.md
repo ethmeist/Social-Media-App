@@ -1,3 +1,3 @@
-# Half-Broken-Social-Media-App
-## ohh nooo bad code
+# Social-Media-App
+## ohh nooo 
 *god help us*
